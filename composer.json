@@ -1,0 +1,32 @@
+{
+    "name": "filo_takip/app",
+    "description": "Filo Takip Sistemi",
+    "type": "project",
+    "license": "MIT",
+    "authors": [{
+        "name": "İsmail Çelikbaş",
+        "email": "ismailcelikbas66@gmail.com"
+    }],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4",
+        "ext-pdo": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/config/config.php",
+            "app/helpers/url_helper.php",
+            "app/helpers/session_helper.php",
+            "app/helpers/log_helper.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
